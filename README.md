@@ -72,10 +72,10 @@
 
 ## 팀원소개
 
-|  이름  |   역할   | GitHub 및 개인페이지               |
-| :----: | :------: | ---------------------------------- |
-| 김현철 |   리더   | https://github.com/peeChulchul     |
-| 도경구 |  부리더  | https://github.com/dosion9         |
-| 마진우 |   팀원   | https://github.com/MaJinWoo        |
-| 민예솔 |   팀원   | https://github.com/ys-oul          |
-| 전상현 | 디자이너 | https://notefolio.net/Kant_/353481 |
+|  이름  |   역할   | GitHub 및 개인페이지               | 담당기능 |
+| :----: | :------: | ---------------------------------- | ------ |
+| 김현철 |   리더   | https://github.com/peeChulchul     | 상품 상세페이지,공용컴포넌트 |
+| 도경구 |  부리더  | https://github.com/dosion9         |  리뷰 및 문의작성,결제  |
+| 마진우 |   팀원   | https://github.com/MaJinWoo        |  카테고리,마이페이지 |
+| 민예솔 |   팀원   | https://github.com/ys-oul          | 로그인 회원가입,장바구니  |
+| 전상현 | 디자이너 | https://notefolio.net/Kant_/353481 | 값     |
