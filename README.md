@@ -73,32 +73,42 @@
 
 ## 트러블 슈팅
 
-### Font
+### 폰트
 
-#### as-is
+<details><summary>문제
+</summary>
+<br/>
 영어와 한글 폰트를 구분하여 사용하고 있으며 최적화를 위해 next/font/google과 next/font/local을 사용했습니다.
 그러나 한글로 사용하는 웹 폰트 파일의 크기가 약 2MB로 인해 FOUT(Flash of Unstyled Text) 현상이 발생했습니다.
+<br/>
+</details>
 
-#### to-be
+<details><summary>해결
+</summary>
+<br/>
 폰트 용량 최적화를 위해 국가 표준 한글과 한글 자음 및 모음을 적용한 커스텀 서브셋을 적용시킨 폰트 파일을 생성하여 폰트 용량을 1/4로 줄였습니다.
+<br/>
+</details>
+
+---
 
 ### 이미지
 
-#### as-is
+<details><summary>문제
+</summary>
+<br/>
 이미지 용량이 너무 커서 이미지다운로드까지 상품설명이 표지되지 않는 문제가 발생하였습니다.
+<br/>
+</details>
 
-#### to-be
+<details><summary>해결
+</summary>
+<br/>
 Next.js에서 제공하는 placeholder를 활용하여 이미지가 로딩되는 동안 블러 처리를 하여 사용자에게 이미지를 제공하기위한 로딩이 발생중이라는 것을 알려줄 수 있게 되었습니다.
+<br/>
+</details>
 
-### middleware
-
-#### as-is
-사용자 고유 페이지나 어드민 페이지에 url 조작을 통해 비정상적으로 접근할 수 있는 문제가 발생하였습니다.
-
-#### to-be
-Next.js Auth Helpers 패키지를 이용해 로그인 정보(access token)를 cookie의 세션에 저장하도록 했습니다. middleware에서  cookie에 저장된 access token값을 통해 사용자 정보를 확인할 수 있게 되었고, 이것을 이용해 페이지 접근을 허용/제한하도록 했습니다.
-
-
+---
 
 ## 팀원소개
 
@@ -108,4 +118,4 @@ Next.js Auth Helpers 패키지를 이용해 로그인 정보(access token)를 co
 | 도경구 |  부리더  | https://github.com/dosion9         |  리뷰 및 문의작성,결제  |
 | 마진우 |   팀원   | https://github.com/MaJinWoo        |  카테고리,마이페이지 |
 | 민예솔 |   팀원   | https://github.com/ys-oul          | 로그인 회원가입,장바구니  |
-| 전상현 | 디자이너 | https://notefolio.net/Kant_/353481 | 디자    |
+| 전상현 | 디자이너 | https://notefolio.net/Kant_/353481 | 디자인    |
